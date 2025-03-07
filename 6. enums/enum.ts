@@ -10,3 +10,4 @@ function move(direction) {
 }
 
 move(Direction.East);
+
