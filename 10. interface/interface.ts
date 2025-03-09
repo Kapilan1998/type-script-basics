@@ -1,7 +1,7 @@
 interface User {
     firstName: string,
     lastName: string,
-     age: number
+     age?: number
 }
 function greetUser(user: User) {
     return `Hello ${user.firstName} ${user.lastName}`;
@@ -12,5 +12,6 @@ function logUserDetails(user: User) {
 }
 
 let user1 = { firstName: "Lasith", lastName: "Malinga", age: 30 };
-console.log(greetUser(user1));      // Hello Lasith Malinga
+let user2 = { firstName: "David", lastName: "Warner"};
+console.log(greetUser(user2));      // Hello Lasith Malinga
 logUserDetails(user1);      // User Lasith Malinga, I am 30 years old.
