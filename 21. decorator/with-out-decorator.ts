@@ -14,6 +14,7 @@
      }
  }
 
+ 
  let calculator = new Calculator();
  calculator.add(17,5);
  calculator.subtract(17,5);
